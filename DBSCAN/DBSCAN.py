@@ -1,9 +1,9 @@
-from sklearn.datasets import make_moons
-from sklearn.cluster import DBSCAN
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+plt.rc('font', family='Microsoft JhengHei') # 設定字型為微軟正黑體（可顯示中文）
+from sklearn.datasets import make_moons
+from sklearn.cluster import DBSCAN
 
 # ====== 定義可視化函式 plot_dbscan() ======
 def plot_dbscan(dbscan, X, size, show_xlabels=True, show_ylabels=True):
@@ -78,4 +78,21 @@ if __name__ == "__main__":
     dbscan = DBSCAN(eps=0.05, min_samples=5)   # 半徑小，預期找出很多雜訊
     dbscan2 = DBSCAN(eps=0.2, min_samples=5)   # 半徑大，分群效果較穩定
 
-    # 套用
+    # 套用 DBSCAN 模型進行訓練
+    dbscan.fit(X)
+    dbscan2.fit(X)
+
+    # 建立視覺化圖像窗口（共兩張圖）
+    plt.figure(figsize=(9, 3.2))
+
+    # 第一張圖：ε = 0.05 的分群結果（預期分群數多、雜訊多）
+    plt.subplot(121)
+    plot_dbscan(dbscan, X, size=100)
+
+    # 第二張圖：ε = 0.2 的分群結果（預期穩定分成兩群）
+    plt.subplot(122)
+    plot_dbscan(dbscan2, X, size=600, show_ylabels=False)
+
+    plt.suptitle("DBSCAN 不同 ε 參數下的分群效果", fontsize=16)
+    plt.tight_layout()
+    plt.show()
