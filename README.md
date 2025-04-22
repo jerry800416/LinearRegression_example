@@ -2,10 +2,13 @@
 
 [toc]
 
-## 內容
+## Tree
 
-1. 線性回歸
-2. 邏輯回歸
-3. K-means
-4. DBSCAN
-5. 決策樹
+```
+├─DBSCAN
+├─DecisionTree：決策樹
+├─EnsembleLearning：集成算法
+├─Kmeans
+├─LinearRegression：線性回歸
+└─LogisticRegression：邏輯回歸
+```
