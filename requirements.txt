@@ -3,6 +3,6 @@ pandas
 matplotlib
 ipython
 plotly
-ipython
 scipy
 scikit-learn
+mlxtend
