@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 plt.rc('font', family='Microsoft JhengHei') # 設定字型為微軟正黑體（可顯示中文）
-
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 from logistic_regression import LogisticRegression  # 匯入自定義的邏輯回歸模型（支援特徵擴展）
 
 # 讀取資料集：每筆資料有兩個特徵與一個類別（是否為有效晶片）

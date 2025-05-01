@@ -15,6 +15,7 @@ import matplotlib
 # matplotlib.use('Agg')  # 若在無 GUI 圖形介面下執行，可開啟此行以避免錯誤
 import matplotlib.pyplot as plt
 plt.rc('font', family='Microsoft JhengHei')  # 設定中文字型以支援中文顯示
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 plt.rcParams['axes.labelsize'] = 14
 plt.rcParams['xtick.labelsize'] = 12
 plt.rcParams['ytick.labelsize'] = 12

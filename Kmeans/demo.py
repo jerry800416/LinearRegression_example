@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 plt.rc('font', family='Microsoft JhengHei') # 設定字型為微軟正黑體（可顯示中文）
-
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 # 匯入自定義的 KMeans 類別（你之前定義好的演算法）
 from k_means import KMeans
 

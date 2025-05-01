@@ -2,7 +2,7 @@ import numpy as np                  # 匯入 NumPy 套件，用於數值運算�
 import pandas as pd                 # 匯入 Pandas 套件，用於資料讀取與處理
 import matplotlib.pyplot as plt     # 匯入 Matplotlib 套件，用於傳統圖表繪製
 plt.rc('font', family='Microsoft JhengHei') # 設定字型為微軟正黑體（可顯示中文）
-
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 # 從自訂的 linear_regression 模組中匯入線性回歸模型類別
 from linear_regression import LinearRegression
 

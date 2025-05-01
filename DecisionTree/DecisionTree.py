@@ -2,6 +2,7 @@
 from matplotlib.font_manager import FontProperties
 import matplotlib.pyplot as plt
 plt.rc('font', family='Microsoft JhengHei')  # 設定繪圖時使用的字型為「微軟正黑體」，支援中文顯示
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 from math import log
 import operator
 

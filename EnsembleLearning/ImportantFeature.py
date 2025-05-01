@@ -12,6 +12,7 @@ import matplotlib
 # matplotlib.use('Agg')  # 若在無圖形介面（如伺服器）執行，可開啟此行避免 GUI 錯誤
 import matplotlib.pyplot as plt
 plt.rc('font', family='Microsoft JhengHei')  # 設定中文字型為微軟正黑體，支援圖形中文字顯示
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 plt.rcParams['axes.labelsize'] = 14  # 坐標標籤字體大小
 plt.rcParams['xtick.labelsize'] = 12  # x軸刻度字體大小
 plt.rcParams['ytick.labelsize'] = 12  # y軸刻度字體大小

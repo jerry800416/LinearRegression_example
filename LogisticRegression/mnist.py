@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 plt.rc('font', family='Microsoft JhengHei') # 設定字型為微軟正黑體（可顯示中文）
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 import matplotlib.image as mpimg
 import math
 

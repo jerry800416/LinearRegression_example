@@ -11,6 +11,7 @@ Sigmoid 核函數則類似於神經網路中的激活函數，適合某些特定
 import numpy as np
 import matplotlib.pyplot as plt
 plt.rc('font', family='Microsoft JhengHei')  # 設定繪圖使用的字型為微軟正黑體
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 from sklearn.svm import SVC
 from sklearn.datasets import make_moons
 

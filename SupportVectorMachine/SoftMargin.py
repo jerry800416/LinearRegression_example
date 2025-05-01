@@ -8,6 +8,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 plt.rc('font', family='Microsoft JhengHei')  # 設定繪圖使用的字型為微軟正黑體
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 from sklearn.datasets import make_classification
 from sklearn.svm import SVC
 

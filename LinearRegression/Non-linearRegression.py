@@ -3,7 +3,7 @@ import numpy as np              # 用來進行數值運算與矩陣處理
 import pandas as pd             # 用來處理與分析資料（DataFrame 格式）
 import matplotlib.pyplot as plt # 用來繪製圖表
 plt.rc('font', family='Microsoft JhengHei') # 設定字型為微軟正黑體（可顯示中文）
-
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 # 匯入自己實作的線性回歸模型類別
 from linear_regression import LinearRegression
 
