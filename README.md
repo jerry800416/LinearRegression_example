@@ -13,7 +13,7 @@
 ├─EnsembleLearning：集成算法
 ├─SupportVectorMachine：支援向量機
 ├─NaiveBayes：樸素貝葉斯
-└─AssociationRule：關聯規則
-
+├─AssociationRule：關聯規則
+└─NeuralNetwork：神經網絡
 
 ```
