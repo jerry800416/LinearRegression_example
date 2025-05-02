@@ -2,6 +2,7 @@ import numpy as np                  # 匯入 NumPy 套件，用於數值運算�
 import pandas as pd                 # 匯入 Pandas 套件，用於資料讀取與處理
 import matplotlib.pyplot as plt     # 匯入 Matplotlib 用於繪製傳統圖表
 plt.rc('font', family='Microsoft JhengHei') # 設定字型為微軟正黑體（可顯示中文）
+plt.rcParams['axes.unicode_minus'] = False  # 設定負號可以正確顯示
 import plotly                      # 匯入 Plotly 套件，用於互動式 3D 圖表繪製
 import plotly.graph_objs as go      # 匯入 Plotly 的圖表物件模組
 
