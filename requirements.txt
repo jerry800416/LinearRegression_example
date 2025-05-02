@@ -6,3 +6,6 @@ plotly
 scipy
 scikit-learn
 mlxtend
+six
+tensorflow
+tensorboard
