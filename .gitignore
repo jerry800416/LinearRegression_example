@@ -1,6 +1,10 @@
 __pycache__
 *.html
 temp-plot.html
+track_metadata.db
+train_triplets.txt
+train_triplets.zip
 venv
 log
 tsne.png
+*.csv
