@@ -3,7 +3,7 @@ __pycache__
 temp-plot.html
 track_metadata.db
 train_triplets.txt
-train_triplets.zip
+train_triplets.txt.zip
 venv
 log
 tsne.png
