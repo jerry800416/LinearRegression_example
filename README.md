@@ -15,5 +15,8 @@
 ├─NaiveBayes：樸素貝葉斯
 ├─AssociationRule：關聯規則
 └─NeuralNetwork：神經網絡
+├─Word2Vec：詞向量模型
+├─RecommendationSystem：推薦系統
+└─PCA&LDA：主成分分析與線性判別分析
 
 ```
