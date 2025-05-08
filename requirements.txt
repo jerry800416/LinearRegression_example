@@ -10,3 +10,4 @@ six
 tensorflow
 tensorboard
 tqdm
+hmmlearn

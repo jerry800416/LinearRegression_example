@@ -17,6 +17,7 @@
 ├─NeuralNetwork：神經網絡
 ├─Word2Vec：詞向量模型
 ├─RecommendationSystem：推薦系統
-└─PCA&LDA：主成分分析與線性判別分析
+├─PCA&LDA：主成分分析與線性判別分析
+└─HiddenMarkovModel：隱馬可夫模型
 
 ```
